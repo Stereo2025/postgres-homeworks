@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  db_auth:
+    container_name: hw_psql_second
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=anton
+      - POSTGRES_PASSWORD=qwe123
+      - POSTGRES_DB=northwind
+    image: postgres:16.1-alpine3.19
